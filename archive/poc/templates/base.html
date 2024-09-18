@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %} - Singapore's Private Property Transactions over the Last 5 years.</title>
+<!-- <link rel = "stylesheet" href = "" -->
+
+{% block content %}
+    <form method = "post">
+        <h1>"Get transactions based on District and Project Name"</h1>
+        <label for = "district_no" >District Number</label>
+        <input name = "district_no" id = "district_no" required>
+        <label for = "project_name" >Project Name</label>
+        <input name = "project_name" id = "project_name" required>
+    </form>
+{% endblock %}

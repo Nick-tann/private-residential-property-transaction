@@ -1,0 +1,23 @@
+{
+ "floor_range": "str",
+ "no_of_units": "int",
+ "contract_date": "str",
+ "type_of_sale": "int",
+ "price": "float",
+ "property_type": "str",
+ "district": "int",
+ "area": "float",
+ "type_of_area": "str",
+ "tenure": "str",
+ "nett_price": "float",
+ "project": "str",
+ "street": "str",
+ "x": "str",
+ "y": "str",
+ "market_segment": "str",
+ "contract_datetime": "str",
+ "price_psm": "float",
+ "contract_month": "int",
+ "contract_year": "int",
+ "contract_quarter": "int"
+}

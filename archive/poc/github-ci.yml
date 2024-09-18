@@ -1,0 +1,30 @@
+name: GitHub ETL
+on:
+    push:
+        branches: [ 0.1.0 ]
+    pull_request:
+        branches: [ 0.1.0 ]
+
+jobs:
+    GenerateFile:
+      runs-on: ubuntu-20.04
+
+      steps:
+        - uses: actions/checkout@v2
+        - name: Set up Python 3.11
+          uses: actions/setup-python@v3
+          with:
+            python-version: "3.11"
+        - name: Install dependencies
+          run: |
+            python -m pip install -r requirements.txt;
+        - name: Generate csv files
+          run:
+            # python load_enriched_data.py
+          
+
+
+
+
+
+        
