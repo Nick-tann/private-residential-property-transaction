@@ -9,7 +9,7 @@ Below, I outline the project folder structure and relevant python scripts to mai
 I also introduce some data engineering concepts and best practices to consolidate my learning from a year working as a Data Engineer.
 
 ## ETL Design  
-< ura_refresh.py>
+< ura_refresh.py>  
 The first consideration when performing ETL is storing data in its raw form from the source, to maintain a source of truth. To reduce any transformations of the source data, which is in the form of an array of dictionaries, I opted to use MongoDB, which can store the data as-is.
 
 <load_district_data.py>  
