@@ -8,14 +8,14 @@ MongoDB, a NoSQL database, was chosen since the URA data is retrieved as a list 
 Below, I outline the project folder structure and relevant python scripts to maintain the data in MongoDB.
 I also introduce some data engineering concepts and best practices to consolidate my learning from a year working as a Data Engineer.
 
-## ETL Design
+## ETL Design  
 < ura_refresh.py>
 The first consideration when performing ETL is storing data in its raw form from the source, to maintain a source of truth. To reduce any transformations of the source data, which is in the form of an array of dictionaries, I opted to use MongoDB, which can store the data as-is.
 
-<load_district_data.py>
+<load_district_data.py>  
 Thereafter, the data can be further refined by feature engineering and type conversions to improve analytics capabilities. Data is stored in MongoDB by district to allow better and faster retrieval. It is also stored in an SQLite3 database for subsequent visualization and viewing.
 
-<load_enriched_data.py>
+<load_enriched_data.py>  
 This step performs simple aggregation of the data to generate insights. (WIP)
 
 
