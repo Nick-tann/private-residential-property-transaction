@@ -75,6 +75,7 @@ def main():
         full_data.append(df)
 
     full_df=pd.concat(full_data)
+    full_df.to_csv("full_data.csv")
 
     #Rename df
     full_df.rename(columns=ura_col_name_mappings,inplace=True)
